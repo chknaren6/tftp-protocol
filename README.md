@@ -41,7 +41,8 @@ This project implements the Trivial File Transfer Protocol (TFTP) client and/or 
     gcc tftp_client.c
 
     # Compile server
-    gcc tftp_server.c common.c -o tftp_server    ```
+    gcc tftp_server.c common.c -o tftp_server
+    ```
     
 
 ## Usage
@@ -81,21 +82,21 @@ Arguments:
 [port]: (Optional) The UDP port number to listen on. Defaults to the standard TFTP port 69.
 [root_directory]: (Optional) The directory from which the server will serve files. Defaults to the current directory (.). Security Note: Ensure this directory has appropriate permissions set.
 Example:
-# Run server on default port 69, serving from /srv/tftp
+Run server on default port 69, serving from /srv/tftp
 ```bash
 ./tftp_server 69 /srv/tftp
 ```
 
-# Run server on port 6969, serving from the current directory
+Run server on port 6969, serving from the current directory
 ```bash
 ./tftp_server 6969.
 ```
 
-##Protocol Details
+## Protocol Details
 This implementation follows the specifications outlined in RFC 1350.
 The standard TFTP block size of 512 bytes is used.
 
-###Error Handling
+## Error Handling
 The implementation handles standard TFTP error codes as defined in RFC 1350:
 0: Not defined, see error message (if any).
 1: File not found.
