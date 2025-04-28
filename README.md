@@ -98,16 +98,18 @@ The standard TFTP block size of 512 bytes is used.
 
 ## Error Handling
 The implementation handles standard TFTP error codes as defined in RFC 1350:
-0: Not defined, see error message (if any).
-1: File not found.
-2: Access violation.
-3: Disk full or allocation exceeded.
-4: Illegal TFTP operation.
-5: Unknown transfer ID.
-6: File already exists.
-7: No such user.
+- **0**: Not defined, see error message (if any).
+- **1**: File not found.
+- **2**: Access violation.
+- **3**: Disk full or allocation exceeded.
+- **4**: Illegal TFTP operation.
+- **5**: Unknown transfer ID.
+- **6**: File already exists.
+- **7**: No such user.
+
 Error messages are printed to standard error (stderr) on both the client and server side, where applicable.
 
+## References
 [Visit RFC 1350 Specification](https://datatracker.ietf.org/doc/html/rfc1350)
 
 
